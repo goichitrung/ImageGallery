@@ -1,0 +1,16 @@
+.image-list {
+  display: grid;
+  /* create a number of columns, auto-fill means depend on
+  browser to choose the number of column to fit in */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* spacing between those grid item */
+  /* order: vertical horizontal */
+  grid-gap: 0 10px;
+  /*give an automatic size of row */
+  grid-auto-rows: 10px;
+}
+
+.image-list img {
+  width: 250px;
+  grid-row-end: span 2;
+}
